@@ -5,27 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <limk rel="stylesheet" href="styles.css">
-        <title>Figma Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Figma Web Design</title>
+    <style>
+        body {
+            background-color: #F1D3BD;
+        }
+    </style>
 </head>
 
 <body>
-    <main class="signup">
-        <div class="signup_left_section">
-            <div><img src="images/My Profile.png" alt="My Profile" width="392px" /></div>
-            <div><img src="images/gold question.png" alt="Gold Question Mark" width="45px" /></div>
-            <p>Fill out your registration here</p>
-            <div class="signup_content">
-                <form>
-                    <div class="form_control">
-                        <label for="title">TITLE:</label>
-                        <input type="text" name="title" id="title"/>
-                    </div>
-                </form>
+    <main>
+        <div class="signup_page">
+            <div class="signup_left">
+                <div class="my_profile">
+                    <div><img src="images/My Profile.png" alt="my profile" width="392"/></div>
+                    <div><img src="images/gold question.png" alt="gold question" width="45"/></div>
+                </div>
+                <p>Fill out your registration here</p>
+
             </div>
-        </div>
-        <div class="signup_right_section">
-            <div><img src="images/photo silhoutte.png" alt="Picture holder" width="114" /></div>
+            <div class="signup_right">
+                <div class="silhoutte">
+                    <div><img src="images/photo silhoutte.png" /></div>
+                    <button>UPLOAD</button>
+                </div>
+                
+            </div>
         </div>
     </main>
 </body>
