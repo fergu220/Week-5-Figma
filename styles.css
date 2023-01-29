@@ -5,11 +5,11 @@
 }
 .signup_page {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: 
     "signup_left signup_right";
     gap: .45rem;
-    margin: auto;
+    margin: 1 rem;
     padding: 1rem;
     margin-left: 35px;
     text-size-adjust: 25px;
@@ -27,6 +27,9 @@
     gap: 28px;
     margin-top: 101px;
     margin-bottom: 19px;
+}
+.signup_page p {
+    margin-bottom: 98px;
 }
 .signup_right {
     grid-area: signup_right;
