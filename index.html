@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Figma Web Design</title>
+    <style>
+        body {
+            background-color: #F1D3BD;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <main>
+        <div class="signup_page">
+            <div class="signup_left">
+                <div class="my_profile">
+                    <div><img src="images/My Profile.png" alt="my profile" width="215"/></div>
+                    <div><img src="images/gold question.png" alt="gold question" width="25"/></div>
+                </div>
+                <p>Fill out your registration here</p>
+                <div class="signup_content">
+                    <form>
+                        <p>CONTACT INFO</p>
+                        <div class="form_control">
+                            <div><img src="images/Red Asterisks.png" alt="red asterisks" width="10"/></div>
+                            <label for="title">TITLE:</label>
+                                <select name="title" id="title">
+                                    <option value="" selected>Select</option>
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms.">Ms.</option>
+                                </select>
+                        </div>
+                        <div class="form_control">
+                            <div><img src="images/Red Asterisks.png" alt="red asterisks" width="10"/></div>
+                            <label for="name">NAME:</label>
+                            <input type="name" name="name" id="name" placeholder="FIRST AND LAST NAME"/>
+                        </div>
+                        <div class="form_control">
+                            <div><img src="images/Red Asterisks.png" alt="red asterisks" width="10"/></div>
+                            <label for="username">USERNAME:</label>
+                            <input type="username" name="username" id="username"/>
+                        </div>
+                        <div class="form_control">
+                            <div><img src="images/Red Asterisks.png" alt="red asterisks" width="10"/></div>
+                            <label for="D.O.B">D.O.B:</label>
+                            <input type="D.O.B" name="D.O.B" id="D.O.B" placeholder="MM/DD/YYYY"/>
+                        </div>
+                        <div class="form_control">
+                            <div><img src="images/Red Asterisks.png" alt="red asterisks" width="10"/></div>
+                            <label for="email">EMAIL:</label>
+                            <input type="email" name="email" id="email"/>
+                        </div>
+                        <div class="form_control">
+                            <div><img src="images/Red Asterisks.png" alt="red asterisks" width="10"/></div>
+                            <label for="password">PASSWORD:</label>
+                            <input type="password" name="password" id="password"/>
+                        </div>
+                        <div class="form_control">
+                            <label for="retype password">RE-TYPE PASSWORD:</label>
+                            <input type="password" name="retype password" id="password"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="signup_right">
+                <div class="silhoutte">
+                    <h6>YOUR PICTURE</h6>
+                    <div><img src="images/photo silhoutte.png" width="60px"/></div>
+                    <button>UPLOAD</button>
+                </div>
+            </div>     
+        </div>
+    </main>
 </body>
+
 </html>
