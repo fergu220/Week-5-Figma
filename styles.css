@@ -3,39 +3,112 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    
+}
 .signup_page {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-    "signup_left signup_right";
-    gap: .45rem;
-    margin: 1 rem;
-    padding: 1rem;
-    margin-left: 35px;
-    text-size-adjust: 25px;
-    
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas:
+    "my profile"
+    "signup_left signup_right";  
 }
 .signup_left {
     grid-area: signup_left;
+    padding: 2.4%;
 }
 .my_profile {
     display: flex;
+    grid-area: my profile;
     flex-direction: row ltr;
     flex-wrap: nowrap;
     justify-content: left;
     align-items: center;
     gap: 28px;
-    margin-top: 101px;
-    margin-bottom: 19px;
+    padding-top: 101px;
+    padding-bottom: 19px;
 }
-.signup_page p {
-    margin-bottom: 98px;
+.signup_content {
+    padding-bottom: 106px;
+    background-color: #F3F3F3;
+}
+.signup_content p {
+    background-color: #D9D9D9;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-style: normal;
+    line-height: 34px;
+}
+
+.signup_content form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 98px;
+}
+.signup_content .form_control input {
+    background-color: #D9D9D9;
+    border: #D9D9D9;
+    text-align: center;
+}
+.signup_content .form_control{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.signup_content .form_control label {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-style: normal;
+    line-height: 34px;
+}
+.signup_content .form_control select {
+    background-color: #D9D9D9;
 }
 .signup_right {
-    grid-area: signup_right;
-    margin-top: 455px;
-    margin-right: 250px;
-}
-.button {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-area: signup_right;
+    padding-top: 285px;
+    padding-right: 100px;
+    
+
+}
+.silhoutte{
+    background-color: white;
+    justify-items: center;
+}
+.silhoutte h6 {
+    display: flex;
+    flex-direction: row ltr;
+    flex-wrap: nowrap;
+    text-align: center;
+    background-color: #D9D9D9;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-style: normal;
+    line-height: 34px;
+}
+.silhoutte button {
+    display: flex;
+    position: relative;
+    width: 173px;
+    height: 60px;
+    left: 1052px;
+    top: 623px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-text-stroke: .40pt;
+    background-color: #ABABAB;
+    height: 20px;
+    width: 60px;
+    cursor: pointer;
 }
