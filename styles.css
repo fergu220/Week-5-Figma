@@ -3,19 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
-html {
-    
-}
 .signup_page {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-areas:
     "my profile"
-    "signup_left signup_right";  
+    "signup_content silhoutte";
+    align-items: flex-start;  
 }
 .signup_left {
-    grid-area: signup_left;
-    padding: 2.4%;
+    padding-left: 35px;
 }
 .my_profile {
     display: flex;
@@ -29,6 +26,7 @@ html {
     padding-bottom: 19px;
 }
 .signup_content {
+    grid-area: signup_content;
     padding-bottom: 106px;
     background-color: #F3F3F3;
 }
@@ -73,21 +71,26 @@ html {
 .signup_right {
     display: flex;
     justify-content: center;
+    justify-items: center;
     text-align: center;
-    grid-area: signup_right;
-    padding-top: 285px;
-    padding-right: 100px;
-    
 
 }
 .silhoutte{
-    background-color: white;
-    justify-items: center;
+    grid-area: silhoutte;
+    background-color: #F3F3F3;
+    justify-content: center;
+    align-content: center;
+    margin-top: 270px;
+}
+.silhoutte img {
+    align-items: center;
+    margin-top: 15px;
 }
 .silhoutte h6 {
     display: flex;
     flex-direction: row ltr;
     flex-wrap: nowrap;
+    justify-content: center;
     text-align: center;
     background-color: #D9D9D9;
     font-size: 15px;
@@ -98,17 +101,22 @@ html {
 }
 .silhoutte button {
     display: flex;
-    position: relative;
-    width: 173px;
-    height: 60px;
-    left: 1052px;
-    top: 623px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    -webkit-text-stroke: .40pt;
+    background-color: #D9D9D9;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-style: normal;
+    line-height: 34px;
+    border: none;
     background-color: #ABABAB;
-    height: 20px;
-    width: 60px;
+    height: 30px;
+    width: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 15px;
+    margin-top: 14px;
     cursor: pointer;
 }
