@@ -1,7 +1,39 @@
-* {
-    padding: 0;
-    margin: 0;
+.contactus_page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  top: 81px;
+  row-gap: 45px;
 }
-.backdrop {
-    
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+  width: 503px;
+}
+.size {
+  width: 100%;
+  box-sizing: border-box;
+}
+.size input, .size textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-family: khula;
+}
+.infobox {
+  height: 70px;
+}
+.form_messagebox {
+  height: 264px;
+}
+
+.contactus_page button {
+  background-color: black;
+  font-size: 36px;
+  color: white;
+  font: manrope;
+  font-weight: 700;
+  width: 200px;
 }
