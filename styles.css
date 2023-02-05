@@ -4,19 +4,17 @@
     box-sizing: border-box;
 }
 .signup_page {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-areas:
-    "my profile"
-    "signup_content silhoutte";
-    align-items: flex-start;  
+    display: flex;
+    flex-direction: column;   
 }
 .signup_left {
     padding-left: 35px;
 }
+.signup_left p {
+    padding-bottom: 98px;
+}
 .my_profile {
     display: flex;
-    grid-area: my profile;
     flex-direction: row ltr;
     flex-wrap: nowrap;
     justify-content: left;
@@ -27,7 +25,6 @@
 }
 .signup_content {
     grid-area: signup_content;
-    padding-bottom: 106px;
     background-color: #F3F3F3;
 }
 .signup_content p {
@@ -40,11 +37,13 @@
     padding-left: 15px;
 }
 
-.signup_content form{
+form {
     display: flex;
     flex-direction: column;
     gap: 24px;
     margin-top: 98px;
+    height: 35px;
+    width: 280px;
 }
 .signup_content .form_control input {
     background-color: #D9D9D9;
