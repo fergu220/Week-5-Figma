@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #b6a497;
+  background-size: cover;
+  width: 100%;
+  height: 140px;
+  align-items: center;
+  padding-left: 34px;
+}
+.topbar_header ul {
+  display: flex;
+}
+.topbar_header ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #f2e8e0;
+  width: 175px;
+  height: 70px;
+  margin-right: 35px;
+  font-family: Mate SC;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.welcomepage {
+  background-color: #f1d3bd;
+  height: 700px;
+  width: 1202px;
+}
