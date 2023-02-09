@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
     <title>Homepage</title>
     <style>
-        body {
-          background: url(./images/homepage\ background.png) ;
-          background-size: fill;
-          background-attachment: fixed;
-        }
-      </style>
-</head>
-<header>
-    <nav>   
-        <div>
-            <img src="images/iconmonstr-menu-lined-240.png"/>
+      body {
+        background: url(./images/homepage\ background.png);
+        background-size: fill;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 1435px;
+        height: 1024px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="menu header">
+        <img src="images/menubars.svg" />
+      </div>
+      <div class="topbar_header">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact Us</li>
+          <li>Sign In</li>
+        </ul>
+      </div>
+    </header>
+    <form id="form">
+      <input type="search" id="query" name="q" placeholder="Search..." />
+      <div class="search_icon">
+        <img src="images/searchicon.svg" alt="search" width="52" />
+      </div>
+    </form>
+    <div class="welcomepage">
+      <div class="welcomepage_left">
+        <p1>Welcome</p1>
+        <p2
+          >Sacred Wisdom is a black-owned<br>virtual library that offers and <br>
+          showcases a full range of black<br>authors from a variety of genres. <br>
+          Register now and get access to a<br>free ebook.</p2
+        >
+        <button>Register now</button>
+      </div>
+      <div class="welcomepage_right">
+        <p>New Releases</p>
+        <div class="books">
+          <div class="first_book_row">
+            <div class="book"><img src="images/obama.png" /></div>
+            <div class="book"><img src="images/prophets.png" /></div>
+            <div class="book"><img src="images/When we were birds.png" /></div>
+          </div>
+          <div class="second_book_row">
+            <div class="book"><img src="images/how stella.png" /></div>
+            <div class="book"><img src="images/perish.png" /></div>
+            <div class="book"><img src="images/black cake.png" /></div>
+          </div>
         </div>
-        <div>
-
-        </div>
-   </nav>
-</header>
-<body>
-    <div class="homepage">
-
+      </div>
     </div>
-</body>
+  </body>
 </html>
