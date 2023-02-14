@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #b6a497;
+  background-size: cover;
+  width: 100%;
+  height: 140px;
+  align-items: center;
+  padding-left: 34px;
+}
+.topbar_header ul {
+  display: flex;
+}
+.topbar_header ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #f2e8e0;
+  width: 175px;
+  height: 70px;
+  margin-right: 35px;
+  font-family: Mate SC;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  text-align: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+form input {
+  width: 846px;
+  height: 69px;
+  border-radius: 30px;
+  margin-top: 17px;
+  margin-bottom: 19px;
+  padding-left: 47px;
+  font-family: Khula;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #BCAEAE;
+  ;
+
+}
+.search_icon {
+  position: absolute;
+  right: 420px;
+  margin-top: 25px;
+}
+.welcomepage {
+  display: flex;
+  background-color: #f1d3bd;
+  box-sizing: border-box;
+  height: 700px;
+  width: 1202px;
+  margin-left: 93px;
+}
+.welcomepage_left {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.welcomepage_left p1 {
+    font-family: Kaushan Script; cursive;
+    font-size: 125px;
+    font-weight: 400;
+    line-height: 181px;
+    letter-spacing: 0em;
+    text-align: left; 
+    width: 504px;
+    height: 140px;
+    margin-left: 41px;
+    margin-top: 26px;
+    margin-bottom: 52px;   
+}
+.welcomepage_left p2 {
+    font-family: Kokoro;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    line-height: 150%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 65px;
+    width: 525px;
+    height: 307px;
+    margin-bottom: 36px;
+}
+.welcomepage_left button {
+    font-family: Kumbh Sans;
+font-size: 32px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+background-color: #FFFFFF;
+border: none;
+width: 265px;
+height: 70px;
+margin-left: 167px;
+}
+.welcomepage_right {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.welcomepage_right p {
+  margin-top: 53px;
+  margin-bottom: 40px;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+  vertical-align: top;
+}
+.books {
+  display: flex;
+  flex-direction: column;
+  width: 574px;
+  height: 623px;
+}
+.first_book_row, .second_book_row {
+    display: flex;
+    column-gap: 56px;
+    margin-bottom: 41px;
+}
