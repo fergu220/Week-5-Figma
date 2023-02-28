@@ -17,10 +17,61 @@ header {
   align-items: center;
   padding-left: 34px;
 }
+.menu_header button {
+  background-color: #b6a497;
+  border: none;
+  cursor: pointer;
+  width: 3rem;
+}
+.menu_header button:hover {
+  background-color: #f1d3bd;
+}
+.menu_header button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0rem);
+}
 .menu_header img {
   width: 50px;
   margin-right: 1rem;
 }
+.menu_header {
+  position: relative;
+}
+.menu_header ul {
+  position: absolute;
+  background: white;
+  width: 10rem;
+  height: 20rem;
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border-radius: .5rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-1rem);
+  transition: all 0.4s ease;
+}
+.menu_header li {
+  background-color: #f1d3bd;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_header li:hover {
+  background-color: #BCAEAE;
+}
+ 
+.menu_header a {
+  text-decoration: none;
+  color: black;
+}
+
 .topbar_header ul {
   display: flex;
 }
@@ -41,15 +92,17 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
-
+.topbar_header a{
+  text-decoration: none;
+  color: black;
+}
 .bodywrapper {
   margin: 0 7.5rem 0 7.5rem;
-
 }
 .searchform {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 40px;
 }
 .searchform input {
@@ -121,6 +174,10 @@ border: none;
 width: 100%;
 height: 50px;
 }
+.welcomepage_left button a {
+  text-decoration: none;
+  color: black;
+}
 .welcomepage_right {
   width: 100%;
   display: flex;
@@ -177,6 +234,9 @@ height: 50px;
 @media only screen and (min-width:1300px) {
   header {
   height: 140px;
+}
+.menu_header button {
+  width: 6.2rem;
 }
 .menu_header img {
   width: 100px;
