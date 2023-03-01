@@ -18,58 +18,50 @@ header {
   padding-left: 34px;
 }
 .menu_header button {
-  background-color: #b6a497;
+  display: flex;
+  background: #b6a497;
   border: none;
   cursor: pointer;
-  width: 3rem;
+  position: relative;
 }
 .menu_header button:hover {
-  background-color: #f1d3bd;
+  background: #f1d3bd;
+}
+.menu_header button:hover ul {
+  display: block;
 }
 .menu_header button:focus + ul {
   opacity: 1;
   pointer-events: all;
-  transform: translateY(0rem);
-}
-.menu_header img {
-  width: 50px;
-  margin-right: 1rem;
-}
-.menu_header {
-  position: relative;
 }
 .menu_header ul {
   position: absolute;
-  background: white;
-  width: 10rem;
-  height: 20rem;
-  margin-top: .5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  margin-top: 1rem;
+  line-height: 2rem;
+  background-color: #f1d3bd;
   align-items: center;
-  list-style: none;
-  border-radius: .5rem;
+  border-radius: 1.5rem;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(-1rem);
-  transition: all 0.4s ease;
 }
 .menu_header li {
-  background-color: #f1d3bd;
+  list-style: none;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  pointer-events: all;
 }
 .menu_header li:hover {
   background-color: #BCAEAE;
 }
- 
 .menu_header a {
   text-decoration: none;
   color: black;
+  font-size: 18px;
 }
 
 .topbar_header ul {
