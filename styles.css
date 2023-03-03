@@ -1,167 +1,163 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 header {
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center;
 }
 .my_profile {
-    display: flex;
-    gap: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .signup_page {
-    display: flex;
-    flex-direction: row;
-    column-gap: 2rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  align-items: baseline;
 }
 .signup_content {
-    background-color: #F3F3F3;
-    width: 100%;
+  background-color: #f3f3f3;
+  width: 100%;
 }
 .signup_content p {
-    background-color: #D9D9D9;
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: 'Open Sans';
-    font-style: normal;
-    line-height: 2rem;
+  background-color: #d9d9d9;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+  line-height: 2rem;
 }
 
-.signup_content form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.signup_content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .signup_content .form_control input {
-    background-color: #D9D9D9;
-    border: #D9D9D9;
-    text-align: center;
-    width: 10rem;
-    margin-right: 2rem;
+  background-color: #d9d9d9;
+  border: #d9d9d9;
+  text-align: center;
+  width: 10rem;
+  margin-right: 2rem;
 }
-.signup_content .form_control{
-    display: flex;
-    flex-direction: row;
-    gap: .5rem;
-    align-items: center;
-    text-align: center;
+.signup_content .form_control {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
 }
 
 .signup_content .form_control label {
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Open Sans';
-    font-style: normal;
-    line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+  line-height: 1.5rem;
 }
 .signup_content .form_control select {
-    background-color: #D9D9D9;
-    width: 5rem;
+  background-color: #d9d9d9;
+  width: 5rem;
 }
 .signup_right {
-    display: none;
+  display: none;
 }
-.silhoutte{
-    background-color: #F3F3F3;
+.silhoutte {
+  background-color: #f3f3f3;
 }
 .silhoutte h6 {
-    display: flex;
-    justify-content: center;
-    background-color: #D9D9D9;
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Open Sans';
-    font-style: normal;
-    line-height: 1.5rem;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+  line-height: 1.5rem;
+  width: 100%;
 }
 .silhoutte button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+  line-height: 10rem;
+  border: none;
+  background-color: #ababab;
+  height: 1.5rem;
+  width: 6rem;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    align-items: start;
+  }
+  .signup_right {
     display: flex;
+    width: 100%;
+  }
+  .silhoutte {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: #D9D9D9;
-    font-size: 1rem;
+  }
+  .silhoutte button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .signup_content form {
+    gap: 1.5rem;
+  }
+  .signup_content .form_control input {
+    background-color: #d9d9d9;
+    border: #d9d9d9;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 18rem;
+    height: 2rem;
+    margin-right: 2rem;
+  }
+  .signup_content .form_control label {
+    font-size: 20px;
     font-weight: 700;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
-    line-height: 10rem;
-    border: none;
-    background-color: #ABABAB;
-    height: 1.5rem;
-    width: 6rem;
-}
-
-@media only screen and (min-width:768px) {
-    header {
-        align-items: start;
-    }
-    .signup_right {
-        display: flex;
-        width: 100%;
-    }
-    .silhoutte {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .silhoutte button {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-}
-@media only screen and (min-width:1000px) {
-
-
- 
-    .signup_content form{
-        gap: 1.5rem;
-    }
-    .signup_content .form_control input {
-        background-color: #D9D9D9;
-        border: #D9D9D9;
-        text-align: center;
-        font-size: 1.4rem;
-        width: 18rem;
-        height: 2rem;
-        margin-right: 2rem;
-    }
-    .signup_content .form_control label {
-        font-size: 20px;
-        font-weight: 700;
-        font-family: 'Open Sans';
-        font-style: normal;
-        line-height: 1.5rem;
-    }
-    .signup_content .form_control select {
-        width: 10rem;
-        height: 2rem;
-        font-size: 1rem;
-    }
-    .silhoutte {
-        width: 20rem;
-    }
-    .silhoutte h6 {
-        font-size: 1.5rem;
-    }
-    .silhoutte img {
-        width: 8rem;
-        margin-top: .5rem;
-    }
-    .silhoutte button {
-        font-size: 1.55rem;
-        height: 2.5rem;
-        width: 10rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        cursor: pointer;
-    }
+    line-height: 1.5rem;
+  }
+  .signup_content .form_control select {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .silhoutte {
+    width: 20rem;
+  }
+  .silhoutte h6 {
+    font-size: 1.5rem;
+  }
+  .silhoutte img {
+    width: 8rem;
+    margin-top: 0.5rem;
+  }
+  .silhoutte button {
+    font-size: 1.55rem;
+    height: 2.5rem;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
 }
