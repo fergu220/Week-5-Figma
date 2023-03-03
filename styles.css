@@ -35,7 +35,6 @@ header {
   font-style: normal;
   line-height: 2rem;
 }
-
 .signup_content form {
   display: flex;
   flex-direction: column;
@@ -55,7 +54,6 @@ header {
   align-items: center;
   text-align: center;
 }
-
 .signup_content .form_control label {
   font-size: 1rem;
   font-weight: 700;
