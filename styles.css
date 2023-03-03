@@ -3,120 +3,165 @@
     margin: 0;
     box-sizing: border-box;
 }
-.signup_page {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-areas:
-    "my profile"
-    "signup_content silhoutte";
-    align-items: flex-start;  
-}
-.signup_left {
-    padding-left: 35px;
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
 }
 .my_profile {
     display: flex;
-    grid-area: my profile;
-    flex-direction: row ltr;
-    flex-wrap: nowrap;
-    justify-content: left;
-    align-items: center;
-    gap: 28px;
-    padding-top: 101px;
-    padding-bottom: 19px;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.signup_page {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    align-items: baseline;
 }
 .signup_content {
-    grid-area: signup_content;
-    padding-bottom: 106px;
     background-color: #F3F3F3;
+    width: 100%;
 }
 .signup_content p {
     background-color: #D9D9D9;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Open Sans';
     font-style: normal;
-    line-height: 34px;
+    line-height: 2rem;
 }
 
 .signup_content form{
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin-top: 98px;
+    gap: 1rem;
 }
 .signup_content .form_control input {
     background-color: #D9D9D9;
     border: #D9D9D9;
     text-align: center;
+    width: 10rem;
+    margin-right: 2rem;
 }
 .signup_content .form_control{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: .5rem;
     align-items: center;
     text-align: center;
 }
 
 .signup_content .form_control label {
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
     font-family: 'Open Sans';
     font-style: normal;
-    line-height: 34px;
+    line-height: 1.5rem;
 }
 .signup_content .form_control select {
     background-color: #D9D9D9;
+    width: 5rem;
 }
 .signup_right {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-
+    display: none;
 }
 .silhoutte{
-    grid-area: silhoutte;
     background-color: #F3F3F3;
-    justify-content: center;
-    align-content: center;
-    margin-top: 270px;
-}
-.silhoutte img {
-    align-items: center;
-    margin-top: 15px;
 }
 .silhoutte h6 {
     display: flex;
-    flex-direction: row ltr;
-    flex-wrap: nowrap;
     justify-content: center;
-    text-align: center;
     background-color: #D9D9D9;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
     font-family: 'Open Sans';
     font-style: normal;
-    line-height: 34px;
+    line-height: 1.5rem;
+    width: 100%;
 }
 .silhoutte button {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     background-color: #D9D9D9;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
     font-family: 'Open Sans';
     font-style: normal;
-    line-height: 34px;
+    line-height: 10rem;
     border: none;
     background-color: #ABABAB;
-    height: 30px;
-    width: 80px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 15px;
-    margin-top: 14px;
-    cursor: pointer;
+    height: 1.5rem;
+    width: 6rem;
+}
+
+@media only screen and (min-width:768px) {
+    header {
+        align-items: start;
+    }
+    .signup_right {
+        display: flex;
+        width: 100%;
+    }
+    .silhoutte {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .silhoutte button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (min-width:1000px) {
+
+
+ 
+    .signup_content form{
+        gap: 1.5rem;
+    }
+    .signup_content .form_control input {
+        background-color: #D9D9D9;
+        border: #D9D9D9;
+        text-align: center;
+        font-size: 1.4rem;
+        width: 18rem;
+        height: 2rem;
+        margin-right: 2rem;
+    }
+    .signup_content .form_control label {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Open Sans';
+        font-style: normal;
+        line-height: 1.5rem;
+    }
+    .signup_content .form_control select {
+        width: 10rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .silhoutte {
+        width: 20rem;
+    }
+    .silhoutte h6 {
+        font-size: 1.5rem;
+    }
+    .silhoutte img {
+        width: 8rem;
+        margin-top: .5rem;
+    }
+    .silhoutte button {
+        font-size: 1.55rem;
+        height: 2.5rem;
+        width: 10rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
 }
