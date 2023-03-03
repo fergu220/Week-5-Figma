@@ -25,6 +25,36 @@ header {
 }
 .signup_content {
   background-color: #f3f3f3;
+  width: 100%;}
+.signup_page {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas:
+    "my profile"
+    "signup_content silhoutte";
+    align-items: flex-start;
+    width: 100%;  
+}
+.signup_left {
+    padding-left: 15px;
+}
+.my_profile {
+    display: flex;
+    grid-area: my profile;
+    flex-direction: row ltr;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.signup_content {
+    grid-area: signup_content;
+    padding-bottom: 10px;
+    background-color: #F3F3F3;
+    width: 100%;
+====
   width: 100%;
 }
 .signup_content p {
