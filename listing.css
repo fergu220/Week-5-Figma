@@ -3,20 +3,21 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-    width: 414px;
-    height: 896px;
-}
+
 header {
   display: flex;
   width: 100%;
-  height: 176px;
+  height: 100%;
+}
+.topbar_header {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
 }
 .topbar_header p {
-  height: 87px;
-  width: 300px;
-  margin-left: 10px;
-  margin-top: 10px;
+  height: 100%;
+  width: 100%;
   font-family: Kaushan Script;
   font-size: 50px;
   font-weight: 400;
@@ -25,338 +26,145 @@ header {
   text-align: center;
 }
 .all_cards {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
 }
-.row_one {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    margin-left: 10px;
-}
-.row_two {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    margin-left: 10px;
-}
+.row_one,
+.row_two,
 .row_three {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    margin-left:10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
 }
-.card_one, .card_two {
-    display: flex;
-    width: 400px;
-    height: 200px;
-}
-.left_side {
-    display: flex;
-    width: 40px;
-    height: 200px;
-    box-sizing: border-box;
-    background-color: #1A1818;
-}
-.heart {
-    display: flex;
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.row_two .heart {
-    display: flex;
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.right_side {
-    display: flex;
-    flex-direction: row;
-    margin-right: 20px;
-    width: 280px;
-    height: 200px;
-    background-color: #D9D9D9;
-}
-.book {
-    width: 100px;
-    height: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.book img {
-    width: 100px;
-}
-.info {
-    display: flex;
-    flex-direction: column;
-}
-.top_level {
-    display: flex;
-    margin-bottom: 5px;
-}
-.ribbon {
-    display: none;
-    width: 34px;
-    height: 64px;
-    position: absolute;
-    padding-left: 290px;
-}
-.row_two .ribbon {
-    display: none;
-    width: 34px;
-    height: 64px;
-    position: absolute;
-    padding-left: 280px;
-}
-.row_three .ribbon {
-    display: none;
-    width: 34px;
-    height: 64px;
-    position: absolute;
-    padding-left: 280px;
-}
-.ribbon2 {
-    display: none;
-    width: 100%;
-    height: 65px;
-    position: absolute;
-    padding-left: 280px;
-}    
-.row_three .ribbon2 {
-        display: none;
-        width: 100%;
-        height: 65px;
-        position: absolute;
-        padding-left: 290px;
-}
-.info p {
-    display: flex;
-    font-family: Kaushan Script;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 58px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-top: 14px;
-}
-.info .author img {
-    width: 150px;
-    height: 39px;
-}
-.info p2 {
-    display: none;
-    font-family: Karma;
-    font-style: normal;
-font-size: 18px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: left;
-}
-@media only screen and (min-width:768px) {
-body {
-    width: 768px;
-    height: 1024px;
-}
-.topbar_header p {
-    height: 80px;
-    width: 768px;
-    margin-left: 0px;
-    font-family: Kaushan Script;
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 70px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-  .card_one, .card_two {
-    width: 100%;
-  }
-.right_side {
-    display: flex;
-    flex-direction: row;
-    margin-right: 20px;
-    width: 2000px;
-    height: 200px;
-    background-color: #D9D9D9;
-}
-    .info p {
-    display: flex;
-    font-family: Kaushan Script;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 58px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-top: 14px;
-}
-.info .author img {
-    width: 125px;
-    height: 39px;
-    align-items: center;
-    margin-top: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-    .info {
-    display: flex;
-    flex-direction: row;
-}
-.info p2 {
-    display:flex;
-    font-family: Karma;
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-top: 10px;
-}
-}
-@media only screen and (min-width:1000px) {
-   body {
-    width: 1435px;
-    height: 1024px;
-   }
-
-    header {
+.card_one,
+.card_two {
   display: flex;
   width: 100%;
-  height: 176px;
 }
-.topbar_header p {
-  height: 87px;
-  width: 706px;
-  margin-left: 372px;
-  margin-top: 36px;
+.left_side {
+  display: flex;
+  width: 4rem;
+  background: #1a1818;
+}
+.heart,
+.row_two .heart {
+  display: flex;
+  width: 3rem;
+  height: 2rem;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.right_side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #d9d9d9;
+  padding: 1rem;
+  column-gap: 1rem;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  align-items: center;
+}
+.top_level {
+  display: flex;
+  margin-bottom: 5px;
+}
+.sidepod {
+    height: 100%;
+}
+.top_ribbon {
+    display: none;
+}
+.info p {
+  display: flex;
   font-family: Kaushan Script;
-  font-size: 60px;
+  font-size: 25px;
   font-weight: 400;
-  line-height: 87px;
+  line-height: 58px;
   letter-spacing: 0em;
   text-align: center;
 }
-.all_cards {
-    display: flex;
-    flex-direction: column;
-    row-gap: 35px;
+.info p2 {
+  display: none;
+  font-family: Karma;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
 }
-.row_one {
+@media only screen and (min-width: 768px) {
+  .info p {
+    display: flex;
+    font-family: Kaushan Script;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .info {
     display: flex;
     flex-direction: row;
-    column-gap: 33px;
-    margin-left: 35px;
+  }
+  .info p2 {
+    display: flex;
+  }
 }
-.row_two {
+@media only screen and (min-width: 1000px) {
+  .row_one,
+  .row_two,
+  .row_three {
     display: flex;
     flex-direction: row;
-    column-gap: 33px;
-    margin-left: 35px;
+    align-items: baseline;
+    column-gap: 1rem;
+  }
+  .card_one,
+.card_two {
+  display: flex;
+  height: 28rem;
 }
-.row_three {
+  .left_side {
     display: flex;
-    flex-direction: row;
-    column-gap: 33px;
-    margin-left: 35px;
-}
-.card_one, .card_two {
-    display: flex;
-    width: 100%;
-    height: 385px;
-}
-.left_side {
-    display: flex;
-    width: 70px;
-    height: 385px;
+    width: 5rem;
     box-sizing: border-box;
-    background-color: #1A1818;
-}
-.heart {
+    background-color: #1a1818;
+  }
+  .heart,
+  .row_two .heart {
     display: flex;
-    width: 49px;
-    height: 50px;
+    width: 1rem;
+    height: 3rem;
     margin-top: 17px;
     margin-left: 10px;
     margin-right: 10px;
-}
-.row_two .heart {
-    display: flex;
-    width: 50px;
-    height: 42px;
-    margin-top: 17px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.right_side {
+  }
+  .right_side {
     display: flex;
     flex-direction: row;
-    width: 595px;
-    height: 385px;
-    background-color: #D9D9D9;
-}
-.book {
-    width: 200px;
-    height: 327px;
-    margin-top: 29px;
-    margin-left: 37px;
-    margin-right: 29px;
-}
-.book img {
-    width: 200px;
-}
-.info {
+    background-color: #d9d9d9;
+  }
+  .info {
     display: flex;
     flex-direction: column;
-}
-.top_level {
+  }
+  .top_level {
     display: flex;
     margin-bottom: 5px;
-}
-.ribbon {
-    display: flex;
-    width: 34px;
-    height: 64px;
-    position: absolute;
-    padding-left: 290px;
-}
-.row_two .ribbon {
-    display: flex;
-    width: 34px;
-    height: 64px;
-    position: absolute;
-    padding-left: 280px;
-}
-.row_three .ribbon {
-    display: flex;
-    width: 34px;
-    height: 64px;
-    position: absolute;
-    padding-left: 280px;
-}
-.ribbon2 {
-    display: flex;
-    width: 100%;
-    height: 65px;
-    position: absolute;
-    padding-left: 280px;
-}    
-.row_three .ribbon2 {
-    display: flex;
-        width: 100%;
-        height: 65px;
-        position: absolute;
-        padding-left: 290px;
-}
-.info p {
+  }
+  .info p {
     display: flex;
     font-family: Kaushan Script;
     font-size: 40px;
@@ -365,19 +173,9 @@ body {
     letter-spacing: 0em;
     text-align: center;
     margin-top: 14px;
-}
-.info .author img {
-    width: 201px;
-    height: 39px;
-    margin-top: 10px;
-}
-.info p2 {
-    font-family: Karma;
-    font-style: normal;
-font-size: 18px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: left;
-}
+  }
+  .top_ribbon {
+    display: flex;
+    position: top;
+  }
 }
