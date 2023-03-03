@@ -25,7 +25,7 @@ header {
 }
 .signup_content {
   background-color: #f3f3f3;
-  width: 100%;
+  width: 100%;}
 .signup_page {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
