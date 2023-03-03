@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.total {
+    display: flex;
+    flex-direction: column;
+    width: 414px;
+    height: 896px;
+}
+.total_left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+}
+.total_right {
+    width: 100%;
+    margin-left: 10px;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.book img {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+}
+.row_one {
+    display: flex;
+}
+.medal {
+    margin-top: 10px;
+}
+.row_one p {
+    font-family: Kaushan Script;
+font-size: 40px;
+font-weight: 400;
+line-height: 58px;
+letter-spacing: 0em;
+text-align: center;
+vertical-align: top;
+margin-top: 10px;
+}
+.row_two {
+margin-left: 40px;
+margin-top: 10px;
+}
+.row_three {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.row_four button {
+    margin-left: 135px;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+}
+.middle {
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+.middle img{
+    width: 350px;
+    margin-left: 5px;
+}
+.bottom_rating {
+    display: none;
+    background-color: #E7E2E2;
+    box-sizing: border-box;
+    width: 400px;
+    height: 385px;
+}
+.eval {
+    margin-top: 0px;
+    margin-left: 22px;
+}
+
+.total_right .row_one p {
+    font-family: Kaushan Script;
+font-size: 40px;
+font-weight: 400;
+line-height: 58px;
+letter-spacing: 0em;
+text-align: center;
+align-content: center;
+vertical-align: top;
+margin-top: 10px;
+padding-left: 40px;
+}
+
+.total_right .middle {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.total_right .bottom_rating {
+    display:none;
+    background-color: #E7E2E2;
+    box-sizing: border-box;
+
+}
+.total_right .bottom_rating .eval {
+    padding-top: 10px;
+    margin-left: 10px;
+}
+@media only screen and (min-width:768px) {
+    .total_left {
+        width: 768px;
+    }
+    .total_right {
+        width: 768px;
+    }
+    .book img {
+        margin-top: 10px;
+        margin-left: 190px;
+        width: 300px;
+        height: 200px;
+    }
+    .row_one {
+        display: flex;
+    }
+    .medal {
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+    .row_one p {
+        font-family: Kaushan Script;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 10px;
+    }
+    .row_two {
+    margin-left: 190px;
+    margin-top: 10px;
+    }
+    .row_three {
+        margin-left: 225px;
+        margin-top: 10px;
+    }
+    .row_four button {
+        margin-left: 290px;
+        margin-top: 10px;
+        width: 100px;
+        height: 40px;
+    }
+    .middle {
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+    .middle img{
+        width: 350px;
+        margin-left: 160px;
+    }
+.bottom_rating {
+        display: block;
+        background-color: #E7E2E2;
+        box-sizing: border-box;
+        width: 650px;
+        height: 385px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+}
+.eval {
+        width: 500px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+.total_right .bottom_rating {
+        display: block;
+        background-color: #E7E2E2;
+        box-sizing: border-box;
+        width: 650px;
+        height: 385px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+}
+.total_right .bottom_rating .eval {
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+}
+@media only screen and (min-width:1000px) {
+.total {
+    display: flex;
+    flex-direction: row;
+    width: 1435px;
+    height: 1024px;
+}
+.total_left {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.total_right {
+    flex: 50%;
+}
+.top {
+    display: flex;
+    flex-direction: row;  
+    margin-bottom: 16px;
+    width: 768px;
+}
+.book img {
+    display: flex;
+    justify-items: left;
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 245px;
+    height: 385px;
+}
+.row_one {
+    display: flex;
+}
+.medal {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.row_one p {
+    font-family: Kaushan Script;
+font-size: 40px;
+font-weight: 400;
+line-height: 58px;
+letter-spacing: 0em;
+text-align: center;
+vertical-align: top;
+margin-top: 40px;
+}
+.row_two {
+margin-left: 60px;
+margin-top: 10px;
+}
+.row_three {
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.row_four button {
+    margin-left: 70px;
+    margin-top: 58px;
+    width: 280px;
+    height: 70px;
+}
+.middle {
+    margin-top: 16px;
+    margin-bottom: 35px;
+}
+.middle img {
+    width: 400px;
+}
+.bottom_rating {
+    background-color: #E7E2E2;
+    box-sizing: border-box;
+    width: 650px;
+    height: 385px;
+}
+.eval {
+    margin-top: 26px;
+    margin-left: 22px;
+    width: 633px;
+    height: 376px;
+}
+
+.total_right .row_one p {
+    font-family: Kaushan Script;
+font-size: 40px;
+font-weight: 400;
+line-height: 58px;
+letter-spacing: 0em;
+text-align: center;
+align-content: center;
+vertical-align: top;
+margin-top: 40px;
+padding-left: 40px;
+}
+
+.total_right .middle {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.total_right .bottom_rating {
+    background-color: #E7E2E2;
+    box-sizing: border-box;
+    width: 665px;
+    height: 385px;
+    margin-top: 35px;
+}
+.total_right .bottom_rating .eval {
+    padding-top: 22px;
+    margin-left: 16px;
+    width: 647px;
+    height: 378px;
+}
+}
