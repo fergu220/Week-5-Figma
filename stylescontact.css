@@ -8,21 +8,21 @@
   flex-direction: column;
   position: relative;
   align-items: center;
-  top: 81px;
-  row-gap: 45px;
+  top: 6rem;
+  row-gap: 3rem;
 }
 .backdrop img {
-  width: 400px;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 20rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 form {
   display: flex;
   flex-direction: column;
-  row-gap: 45px;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 380px;
+  row-gap: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 30rem;
 }
 .size {
   width: 100%;
@@ -31,37 +31,34 @@ form {
 .size input, .size textarea {
   width: 100%;
   height: 100%;
-  font-size: 24px;
+  font-size: 2rem;
   font-family: khula;
 }
 .infobox {
-  height: 70px;
+  height: 4.5rem;
 }
 .form_messagebox {
-  height: 264px;
+  height: 15rem;
 }
 
 .contactus_page button {
   background-color: black;
-  font-size: 36px;
+  font-size: 2rem;
   color: white;
   font: manrope;
   font-weight: 700;
-  width: 200px;
+  width: 15rem;
 }
 
 @media only screen and (min-width:768px) {
   .backdrop img {
-    width: 600px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 40rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 45px;
-    margin-left: 400px;
-    margin-right: 400px;
-    width: 600px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    width: 38rem;
   }
 }
