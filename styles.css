@@ -127,6 +127,13 @@ header {
   height: 1.5rem;
   width: 6rem;
 }
+button {
+  margin: .5rem;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 2rem;
+}
 @media only screen and (min-width: 768px) {
   header {
     align-items: start;
